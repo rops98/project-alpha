@@ -1,4 +1,5 @@
 import Header from "../components/Header";
+import PortfolioChart from "../components/PortfolioChart";
 import AIInsight from "../components/AIInsight";
 import AlphaScore from "../components/AlphaScore";
 import AlphaRadar from "../components/AlphaRadar";
@@ -33,6 +34,10 @@ export default function Home() {
 
 
       </section>
+
+
+
+      <PortfolioChart />
 
 
 
@@ -114,7 +119,6 @@ export default function Home() {
 
 
       </section>
-
 
 
     </main>
