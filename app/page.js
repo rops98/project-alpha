@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import AIInsight from "../components/AIInsight";
+import AlphaScore from "../components/AlphaScore";
 
 
 export default function Home() {
@@ -8,26 +9,36 @@ export default function Home() {
 
     <main className="container">
 
+
       <Header />
 
 
       <section className="portfolio">
 
-        <p>Portfelli väärtus</p>
+        <p>
+          Portfelli väärtus
+        </p>
+
 
         <h1>
           100,00 €
         </h1>
 
+
         <span>
           +0,00% täna
         </span>
+
 
       </section>
 
 
 
       <AIInsight />
+
+
+
+      <AlphaScore />
 
 
 
@@ -81,47 +92,42 @@ export default function Home() {
 
       <section className="card">
 
+
         <h2>
-          🔎 Jälgimisel
+          🔥 Alpha Radar
         </h2>
 
 
         <div>
-
           <strong>
             NVIDIA
           </strong>
 
           <p>
-            AI skoor: 91/100
+            AI skoor: 91/100 🟢
           </p>
-
         </div>
 
 
         <div>
-
           <strong>
             Bitcoin
           </strong>
 
           <p>
-            AI skoor: 85/100
+            AI skoor: 85/100 🟡
           </p>
-
         </div>
 
 
         <div>
-
           <strong>
             Microsoft
           </strong>
 
           <p>
-            AI skoor: 88/100
+            AI skoor: 88/100 🟢
           </p>
-
         </div>
 
 
@@ -131,15 +137,19 @@ export default function Home() {
 
       <section className="card">
 
+
         <h2>
           🚨 Teavitused
         </h2>
+
 
         <p>
           Hetkel aktiivseid hoiatusi ei ole.
         </p>
 
+
       </section>
+
 
 
     </main>
