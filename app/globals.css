@@ -1550,3 +1550,7 @@ margin-top:5px;
   font-weight: 700;
 
 }
+/* HOLDINGS TEST */
+.holdings {
+  outline: 3px solid red;
+}
