@@ -4,19 +4,24 @@ export default function AlphaScore() {
 
     <section className="alpha-score">
 
-      <div className="alpha-header">
+
+      <div className="alpha-title">
         🧠 Alpha Score
       </div>
 
 
-      <div className="score-number">
-        82
+      <div className="score-wrapper">
+
+        <span className="score-number">
+          82
+        </span>
+
+        <span className="score-total">
+          /100
+        </span>
+
       </div>
 
-
-      <div className="score-label">
-        / 100
-      </div>
 
 
       <div className="positive">
@@ -24,33 +29,35 @@ export default function AlphaScore() {
       </div>
 
 
-      <div className="metrics">
 
-        <div>
-          <span>
-            Turu võimalused
-          </span>
+      <div className="metric">
 
-          <div className="bar">
-            <div className="bar-fill opportunity"></div>
-          </div>
-
+        <div className="metric-header">
+          <span>Turu võimalused</span>
+          <span>80%</span>
         </div>
 
 
-
-        <div>
-
-          <span>
-            Riskitase
-          </span>
-
-          <div className="bar">
-            <div className="bar-fill risk"></div>
-          </div>
-
+        <div className="bar">
+          <div className="bar-blue"></div>
         </div>
 
+      </div>
+
+
+
+
+      <div className="metric">
+
+        <div className="metric-header">
+          <span>Riskitase</span>
+          <span>45%</span>
+        </div>
+
+
+        <div className="bar">
+          <div className="bar-yellow"></div>
+        </div>
 
       </div>
 
@@ -58,5 +65,4 @@ export default function AlphaScore() {
     </section>
 
   );
-
 }
