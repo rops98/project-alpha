@@ -3,286 +3,172 @@ export default function Home() {
     {
       name: "NVIDIA",
       score: 91,
-      status: "Hea jälgida"
+      status: "Hea jälgida",
     },
     {
       name: "Bitcoin",
       score: 85,
-      status: "Oota võimalust"
+      status: "Oota võimalust",
     },
     {
       name: "Microsoft",
       score: 88,
-      status: "Stabiilne"
-    }
+      status: "Stabiilne",
+    },
   ];
 
   return (
-    <main className="page">
+    <main
+      style={{
+        minHeight: "100vh",
+        background: "#f8fafc",
+        padding: "30px",
+        fontFamily: "Arial, sans-serif",
+        color: "#111827",
+        maxWidth: "900px",
+        margin: "auto",
+      }}
+    >
+      <h1>🧠 Project Alpha</h1>
 
-      <header>
-        <h1>🧠 Project Alpha</h1>
-        <p className="subtitle">
-          Tere, Robert 👋
-        </p>
-        <p className="gray">
-          Sinu isiklik AI investeerimisassistent
-        </p>
-      </header>
+      <h2>Tere, Robert 👋</h2>
+
+      <p style={{ color: "#64748b" }}>
+        Sinu isiklik AI investeerimisassistent
+      </p>
 
 
-      <section className="mainCard">
-
-        <p className="label">
-          Portfelli väärtus
-        </p>
-
-        <h2>
-          100,00 €
-        </h2>
-
-        <p className="green">
+      <div
+        style={{
+          background: "white",
+          padding: "25px",
+          borderRadius: "20px",
+          marginTop: "25px",
+        }}
+      >
+        <p>Portfelli väärtus</p>
+        <h1>100,00 €</h1>
+        <b style={{ color: "green" }}>
           +0,00% täna
-        </p>
-
-      </section>
-
+        </b>
+      </div>
 
 
-      <section className="card">
+      <div
+        style={{
+          background: "white",
+          padding: "25px",
+          borderRadius: "20px",
+          marginTop: "20px",
+        }}
+      >
+        <h2>🤖 Tänane AI hinnang</h2>
 
-        <h3>
-          🤖 Tänane AI hinnang
-        </h3>
-
-        <div className="status">
-          🟡 OOTA
-        </div>
+        <h3>🟡 OOTA</h3>
 
         <p>
           Hetkel ei näe tugevat ostukohta.
           Jälgin turgu ja ootan paremat võimalust.
         </p>
-
-      </section>
-
+      </div>
 
 
-      <section className="grid">
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns:
+            "repeat(auto-fit,minmax(200px,1fr))",
+          gap: "20px",
+          marginTop: "20px",
+        }}
+      >
 
-        <div className="card">
-          <p className="label">
-            Vaba raha
-          </p>
-          <h3>
-            100,00 €
-          </h3>
-        </div>
+        <Box title="Vaba raha" value="100,00 €" />
 
+        <Box title="Investeeritud" value="0,00 €" />
 
-        <div className="card">
-          <p className="label">
-            Investeeritud
-          </p>
-          <h3>
-            0,00 €
-          </h3>
-        </div>
+        <Box title="Kasum/kahjum" value="0,00 €" />
+
+      </div>
 
 
-        <div className="card">
-          <p className="label">
-            Kasum/kahjum
-          </p>
-          <h3>
-            0,00 €
-          </h3>
-        </div>
+      <div
+        style={{
+          background: "white",
+          padding: "25px",
+          borderRadius: "20px",
+          marginTop: "20px",
+        }}
+      >
 
-      </section>
-
-
-
-      <section className="card">
-
-        <h3>
-          🔎 Jälgimisel
-        </h3>
-
+        <h2>🔎 Jälgimisel</h2>
 
         {investments.map((item) => (
-
-          <div className="investment" key={item.name}>
+          <div
+            key={item.name}
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              borderBottom: "1px solid #eee",
+              padding: "15px 0",
+            }}
+          >
 
             <div>
-              <strong>
-                {item.name}
-              </strong>
-
-              <p>
-                {item.status}
-              </p>
+              <b>{item.name}</b>
+              <div>{item.status}</div>
             </div>
 
-
-            <div className="score">
+            <strong>
               {item.score}/100
-            </div>
+            </strong>
 
           </div>
-
         ))}
 
-      </section>
+      </div>
 
 
+      <div
+        style={{
+          background: "white",
+          padding: "25px",
+          borderRadius: "20px",
+          marginTop: "20px",
+        }}
+      >
 
-      <section className="card">
-
-        <h3>
-          🚨 Teavitused
-        </h3>
+        <h2>🚨 Teavitused</h2>
 
         <p>
           Hetkel aktiivseid hoiatusi ei ole.
         </p>
 
-      </section>
+      </div>
 
-
-      <style jsx>{`
-
-        .page {
-          min-height:100vh;
-          background:#f7f8fa;
-          color:#111827;
-          padding:30px;
-          max-width:900px;
-          margin:auto;
-          font-family:Arial, sans-serif;
-        }
-
-
-        h1 {
-          font-size:36px;
-          margin-bottom:10px;
-        }
-
-
-        h2 {
-          font-size:48px;
-          margin:10px 0;
-        }
-
-
-        h3 {
-          margin-top:0;
-        }
-
-
-        .subtitle {
-          font-size:22px;
-          margin-bottom:5px;
-        }
-
-
-        .gray {
-          color:#6b7280;
-        }
-
-
-        .label {
-          color:#6b7280;
-          margin-bottom:5px;
-        }
-
-
-        .mainCard,
-        .card {
-
-          background:white;
-          border-radius:24px;
-          padding:25px;
-          margin-top:20px;
-          box-shadow:0 8px 25px rgba(0,0,0,0.05);
-
-        }
-
-
-        .green {
-          color:#16a34a;
-          font-weight:bold;
-        }
-
-
-        .status {
-
-          display:inline-block;
-          background:#fef3c7;
-          padding:10px 18px;
-          border-radius:30px;
-          margin:10px 0;
-          font-weight:bold;
-
-        }
-
-
-        .grid {
-
-          display:grid;
-          grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-          gap:20px;
-
-        }
-
-
-        .investment {
-
-          display:flex;
-          justify-content:space-between;
-          align-items:center;
-          border-top:1px solid #eee;
-          padding:15px 0;
-
-        }
-
-
-        .investment p {
-
-          margin:5px 0 0;
-          color:#6b7280;
-
-        }
-
-
-        .score {
-
-          font-size:20px;
-          font-weight:bold;
-
-        }
-
-
-        @media(max-width:600px){
-
-          .page {
-            padding:20px;
-          }
-
-
-          h1 {
-            font-size:30px;
-          }
-
-
-          h2 {
-            font-size:40px;
-          }
-
-        }
-
-      `}</style>
 
     </main>
+  );
+}
+
+
+function Box({ title, value }) {
+  return (
+    <div
+      style={{
+        background: "white",
+        padding: "20px",
+        borderRadius: "20px",
+      }}
+    >
+      <p style={{ color: "#64748b" }}>
+        {title}
+      </p>
+
+      <h2>
+        {value}
+      </h2>
+
+    </div>
   );
 }
