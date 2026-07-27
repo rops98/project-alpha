@@ -1,10 +1,10 @@
 import Header from "../components/Header";
+import PortfolioOverview from "../components/PortfolioOverview";
 import PortfolioChart from "../components/PortfolioChart";
-import AIInsight from "../components/AIInsight";
-import AlphaScore from "../components/AlphaScore";
-import AlphaRadar from "../components/AlphaRadar";
 import DailyBrief from "../components/DailyBrief";
+import AlphaRadar from "../components/AlphaRadar";
 import Alerts from "../components/Alerts";
+
 
 export default function Home() {
 
@@ -16,109 +16,19 @@ export default function Home() {
       <Header />
 
 
-      <section className="portfolio">
-
-        <p>
-          Portfelli väärtus
-        </p>
+      <PortfolioOverview />
 
 
-        <h1>
-          100,00 €
-        </h1>
-
-
-        <span>
-          +0,00% täna
-        </span>
-
-
-      </section>
-
-
-
-      <PortfolioChart />
-
-
-
-      <AIInsight />
-
-
-
-      <AlphaScore />
-
+      <DailyBrief />
 
 
       <AlphaRadar />
 
 
-
-      <DailyBrief />
-<Alerts />
+      <Alerts />
 
 
-      <section className="stats">
-
-
-        <div>
-
-          <p>
-            Vaba raha
-          </p>
-
-          <b>
-            100,00 €
-          </b>
-
-        </div>
-
-
-
-        <div>
-
-          <p>
-            Investeeritud
-          </p>
-
-          <b>
-            0,00 €
-          </b>
-
-        </div>
-
-
-
-        <div>
-
-          <p>
-            Kasum / kahjum
-          </p>
-
-          <b>
-            0,00 €
-          </b>
-
-        </div>
-
-
-      </section>
-
-
-
-      <section className="card">
-
-
-        <h2>
-          🚨 Teavitused
-        </h2>
-
-
-        <p>
-          Hetkel aktiivseid hoiatusi ei ole.
-        </p>
-
-
-      </section>
+      <PortfolioChart />
 
 
     </main>
