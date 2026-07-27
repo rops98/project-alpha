@@ -1276,7 +1276,21 @@ font-weight:700;
 
 }
 .holdings {
+.holdings {
 
+  margin-top: 25px;
+
+  /* premium glow */
+  position: relative;
+
+}
+
+  margin-top: 25px;
+
+  /* premium glow */
+  position: relative;
+
+}
 margin-top:25px;
 
 background:
