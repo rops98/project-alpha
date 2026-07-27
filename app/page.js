@@ -1,9 +1,10 @@
 import Header from "../components/Header";
 import PortfolioOverview from "../components/PortfolioOverview";
-import PortfolioChart from "../components/PortfolioChart";
+import Holdings from "../components/Holdings";
 import DailyBrief from "../components/DailyBrief";
 import AlphaRadar from "../components/AlphaRadar";
 import Alerts from "../components/Alerts";
+import PortfolioChart from "../components/PortfolioChart";
 
 
 export default function Home() {
@@ -17,6 +18,9 @@ export default function Home() {
 
 
       <PortfolioOverview />
+
+
+      <Holdings />
 
 
       <DailyBrief />
