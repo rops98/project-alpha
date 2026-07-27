@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import AIInsight from "../components/AIInsight";
 import AlphaScore from "../components/AlphaScore";
-
+import AlphaRadar from "../components/AlphaRadar";
 
 export default function Home() {
 
@@ -39,7 +39,7 @@ export default function Home() {
 
 
       <AlphaScore />
-
+<AlphaRadar />
 
 
       <section className="stats">
