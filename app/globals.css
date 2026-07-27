@@ -527,3 +527,183 @@ background:#facc15;
 border-radius:20px;
 
 }
+.alpha-radar {
+
+margin-top:25px;
+
+background:
+rgba(15,23,42,.75);
+
+border:
+
+1px solid rgba(148,163,184,.15);
+
+padding:30px;
+
+border-radius:30px;
+
+backdrop-filter:blur(20px);
+
+}
+
+
+
+.radar-title {
+
+font-size:22px;
+
+font-weight:800;
+
+}
+
+
+
+.radar-subtitle {
+
+color:#94a3b8;
+
+margin-top:5px;
+
+}
+
+
+
+.radar-assets {
+
+display:flex;
+
+flex-direction:column;
+
+gap:18px;
+
+margin-top:25px;
+
+}
+
+
+
+.radar-card {
+
+background:
+
+rgba(2,6,23,.45);
+
+padding:20px;
+
+border-radius:22px;
+
+border:
+
+1px solid rgba(255,255,255,.08);
+
+}
+
+
+
+.radar-header {
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+font-size:18px;
+
+}
+
+
+
+.score {
+
+font-size:28px;
+
+font-weight:800;
+
+}
+
+
+
+.score.green {
+
+color:#4ade80;
+
+}
+
+
+.score.yellow {
+
+color:#facc15;
+
+}
+
+
+.score.gray {
+
+color:#94a3b8;
+
+}
+
+
+
+.radar-bar {
+
+height:8px;
+
+background:#1e293b;
+
+border-radius:20px;
+
+margin-top:15px;
+
+overflow:hidden;
+
+}
+
+
+
+.radar-progress {
+
+height:100%;
+
+border-radius:20px;
+
+}
+
+
+
+.radar-progress.green {
+
+background:#22c55e;
+
+}
+
+
+.radar-progress.yellow {
+
+background:#eab308;
+
+}
+
+
+.radar-progress.gray {
+
+background:#64748b;
+
+}
+
+
+
+.radar-info {
+
+display:flex;
+
+justify-content:space-between;
+
+margin-top:12px;
+
+font-size:14px;
+
+color:#94a3b8;
+
+}
