@@ -387,3 +387,143 @@ font-size:34px;
 
 
 }
+.alpha-score {
+
+margin-top:25px;
+
+background:
+linear-gradient(
+135deg,
+rgba(139,92,246,0.25),
+rgba(56,189,248,0.15)
+);
+
+border:1px solid rgba(139,92,246,.35);
+
+padding:32px;
+
+border-radius:30px;
+
+box-shadow:
+0 0 50px rgba(139,92,246,.15);
+
+}
+
+
+.alpha-title {
+
+font-size:18px;
+font-weight:700;
+color:#c4b5fd;
+
+}
+
+
+
+.score-wrapper {
+
+display:flex;
+align-items:baseline;
+gap:8px;
+margin-top:15px;
+
+}
+
+
+
+.score-number {
+
+font-size:90px;
+font-weight:800;
+
+background:
+linear-gradient(
+90deg,
+#38bdf8,
+#8b5cf6
+);
+
+-webkit-background-clip:text;
+color:transparent;
+
+}
+
+
+
+.score-total {
+
+font-size:30px;
+color:#94a3b8;
+
+}
+
+
+
+.positive {
+
+margin-top:10px;
+color:#4ade80;
+font-weight:700;
+
+}
+
+
+
+.metric {
+
+margin-top:25px;
+
+}
+
+
+
+.metric-header {
+
+display:flex;
+justify-content:space-between;
+
+color:#cbd5e1;
+
+font-size:14px;
+
+}
+
+
+
+.bar {
+
+height:10px;
+
+background:#1e293b;
+
+border-radius:20px;
+
+margin-top:10px;
+
+overflow:hidden;
+
+}
+
+
+
+.bar-blue {
+
+height:100%;
+width:80%;
+background:#38bdf8;
+
+border-radius:20px;
+
+}
+
+
+
+.bar-yellow {
+
+height:100%;
+width:45%;
+background:#facc15;
+
+border-radius:20px;
+
+}
