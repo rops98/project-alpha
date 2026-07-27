@@ -3,6 +3,7 @@ import AIInsight from "../components/AIInsight";
 import AlphaScore from "../components/AlphaScore";
 import AlphaRadar from "../components/AlphaRadar";
 
+
 export default function Home() {
 
   return (
@@ -39,7 +40,11 @@ export default function Home() {
 
 
       <AlphaScore />
-<AlphaRadar />
+
+
+
+      <AlphaRadar />
+
 
 
       <section className="stats">
@@ -83,51 +88,6 @@ export default function Home() {
             0,00 €
           </b>
 
-        </div>
-
-
-      </section>
-
-
-
-      <section className="card">
-
-
-        <h2>
-          🔥 Alpha Radar
-        </h2>
-
-
-        <div>
-          <strong>
-            NVIDIA
-          </strong>
-
-          <p>
-            AI skoor: 91/100 🟢
-          </p>
-        </div>
-
-
-        <div>
-          <strong>
-            Bitcoin
-          </strong>
-
-          <p>
-            AI skoor: 85/100 🟡
-          </p>
-        </div>
-
-
-        <div>
-          <strong>
-            Microsoft
-          </strong>
-
-          <p>
-            AI skoor: 88/100 🟢
-          </p>
         </div>
 
 
