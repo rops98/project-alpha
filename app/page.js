@@ -4,7 +4,7 @@ import AIInsight from "../components/AIInsight";
 import AlphaScore from "../components/AlphaScore";
 import AlphaRadar from "../components/AlphaRadar";
 import DailyBrief from "../components/DailyBrief";
-
+import Alerts from "../components/Alerts";
 
 export default function Home() {
 
@@ -54,7 +54,7 @@ export default function Home() {
 
 
       <DailyBrief />
-
+<Alerts />
 
 
       <section className="stats">
