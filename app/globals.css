@@ -1275,3 +1275,134 @@ color:#4ade80;
 font-weight:700;
 
 }
+.holdings {
+
+margin-top:25px;
+
+background:
+
+linear-gradient(
+135deg,
+rgba(139,92,246,.12),
+rgba(56,189,248,.10)
+);
+
+border:
+
+1px solid rgba(139,92,246,.25);
+
+padding:30px;
+
+border-radius:30px;
+
+box-shadow:
+
+0 0 40px rgba(139,92,246,.10);
+
+}
+
+
+.holdings-title {
+
+font-size:22px;
+
+font-weight:800;
+
+}
+
+
+.holdings-subtitle {
+
+color:#94a3b8;
+
+margin-top:5px;
+
+}
+
+
+
+.holdings-list {
+
+display:flex;
+
+flex-direction:column;
+
+gap:15px;
+
+margin-top:25px;
+
+}
+
+
+
+.holding-card {
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+
+background:
+
+rgba(2,6,23,.45);
+
+
+border:
+
+1px solid rgba(255,255,255,.08);
+
+
+padding:20px;
+
+
+border-radius:22px;
+
+}
+
+
+
+.holding-card strong {
+
+font-size:18px;
+
+}
+
+
+
+.holding-card p {
+
+margin:5px 0 0;
+
+color:#94a3b8;
+
+}
+
+
+
+.holding-right {
+
+text-align:right;
+
+}
+
+
+
+.holding-right strong {
+
+font-size:20px;
+
+}
+
+
+
+.holding-right span {
+
+display:block;
+
+color:#4ade80;
+
+margin-top:5px;
+
+}
