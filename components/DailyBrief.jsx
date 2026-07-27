@@ -4,8 +4,11 @@ export default function DailyBrief() {
 
     <section className="daily-brief">
 
-      <div className="brief-title">
+
+      <div className="brief-header">
+
         🤖 Alpha Daily Brief
+
       </div>
 
 
@@ -15,43 +18,51 @@ export default function DailyBrief() {
 
 
 
-      <div className="brief-item">
-
-        <strong>
-          🟢 Turu seis
-        </strong>
-
-        <p>
-          Positiivne. AI sektor ja kvaliteetaktsiad näitavad tugevust.
-        </p>
-
-      </div>
+      <div className="brief-grid">
 
 
+        <div className="brief-box">
 
-      <div className="brief-item">
+          <h3>
+            🟢 Turu seis
+          </h3>
 
-        <strong>
-          📈 Täna jälgin
-        </strong>
+          <p>
+            Positiivne. AI sektor ja kvaliteetaktsiad näitavad tugevust.
+          </p>
 
-        <p>
-          NVIDIA, Microsoft ja Bitcoin.
-        </p>
-
-      </div>
+        </div>
 
 
 
-      <div className="brief-item">
+        <div className="brief-box">
 
-        <strong>
-          ⚠️ Riskid
-        </strong>
+          <h3>
+            📈 Täna jälgin
+          </h3>
 
-        <p>
-          Suur volatiilsus ja võimalikud kiired hinnaliikumised.
-        </p>
+          <p>
+            NVIDIA<br />
+            Microsoft<br />
+            Bitcoin
+          </p>
+
+        </div>
+
+
+
+        <div className="brief-box">
+
+          <h3>
+            ⚠️ Riskid
+          </h3>
+
+          <p>
+            Suur volatiilsus ja võimalikud kiired hinnaliikumised.
+          </p>
+
+        </div>
+
 
       </div>
 
@@ -59,12 +70,13 @@ export default function DailyBrief() {
 
       <div className="recommendation">
 
-        💡 Alpha soovitus:
+        💡 <strong>Alpha soovitus</strong>
 
-        <br />
+        <p>
+          Ära investeeri kogu raha korraga.
+          Oota paremaid sisenemiskohti.
 
-        Ära investeeri kogu raha korraga.
-        Oota häid sisenemiskohti.
+        </p>
 
       </div>
 
