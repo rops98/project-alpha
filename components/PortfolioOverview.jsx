@@ -8,16 +8,26 @@ export default function PortfolioOverview() {
       <div className="portfolio-main">
 
         <p>
-          Minu portfell
+          💰 Minu portfell
         </p>
+
 
         <h1>
           100,00 €
         </h1>
 
+
         <span>
-          +0,00% täna
+          ↑ +0,00% täna
         </span>
+
+
+        <div className="portfolio-status">
+
+          🟢 Portfell aktiivne
+
+        </div>
+
 
       </div>
 
@@ -26,11 +36,12 @@ export default function PortfolioOverview() {
       <div className="portfolio-side">
 
 
-        <div>
+        <div className="portfolio-box">
 
           <small>
             Vaba raha
           </small>
+
 
           <strong>
             100,00 €
@@ -40,15 +51,26 @@ export default function PortfolioOverview() {
 
 
 
-        <div>
+
+        <div className="portfolio-box alpha-mini">
+
 
           <small>
             Alpha Score
           </small>
 
-          <strong>
-            82/100
-          </strong>
+
+          <div className="score-circle">
+
+            82
+
+          </div>
+
+
+          <span>
+            🟢 Positiivne
+          </span>
+
 
         </div>
 
