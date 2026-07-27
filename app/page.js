@@ -1,5 +1,5 @@
-import Header from "@/components/Header";
-import AIInsight from "@/components/AIInsight";
+import Header from "../components/Header";
+import AIInsight from "../components/AIInsight";
 
 
 export default function Home() {
@@ -9,6 +9,7 @@ export default function Home() {
     <main className="container">
 
       <Header />
+
 
       <section className="portfolio">
 
@@ -25,25 +26,118 @@ export default function Home() {
       </section>
 
 
+
       <AIInsight />
+
 
 
       <section className="stats">
 
-        <div>
-          <p>Vaba raha</p>
-          <b>100,00 €</b>
-        </div>
 
         <div>
-          <p>Investeeritud</p>
-          <b>0,00 €</b>
+
+          <p>
+            Vaba raha
+          </p>
+
+          <b>
+            100,00 €
+          </b>
+
         </div>
 
+
+
         <div>
-          <p>Kasum/kahjum</p>
-          <b>0,00 €</b>
+
+          <p>
+            Investeeritud
+          </p>
+
+          <b>
+            0,00 €
+          </b>
+
         </div>
+
+
+
+        <div>
+
+          <p>
+            Kasum / kahjum
+          </p>
+
+          <b>
+            0,00 €
+          </b>
+
+        </div>
+
+
+      </section>
+
+
+
+      <section className="card">
+
+        <h2>
+          🔎 Jälgimisel
+        </h2>
+
+
+        <div>
+
+          <strong>
+            NVIDIA
+          </strong>
+
+          <p>
+            AI skoor: 91/100
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <strong>
+            Bitcoin
+          </strong>
+
+          <p>
+            AI skoor: 85/100
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <strong>
+            Microsoft
+          </strong>
+
+          <p>
+            AI skoor: 88/100
+          </p>
+
+        </div>
+
+
+      </section>
+
+
+
+      <section className="card">
+
+        <h2>
+          🚨 Teavitused
+        </h2>
+
+        <p>
+          Hetkel aktiivseid hoiatusi ei ole.
+        </p>
 
       </section>
 
