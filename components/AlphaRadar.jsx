@@ -5,25 +5,29 @@ export default function AlphaRadar() {
       name: "NVIDIA",
       score: 91,
       status: "Tugev trend",
-      signal: "🟢"
+      risk: "Keskmine",
+      color: "green"
     },
     {
       name: "Bitcoin",
       score: 85,
       status: "Jälgi võimalust",
-      signal: "🟡"
+      risk: "Kõrgem",
+      color: "yellow"
     },
     {
       name: "Microsoft",
       score: 88,
       status: "Stabiilne kasv",
-      signal: "🟢"
+      risk: "Madal",
+      color: "green"
     },
     {
       name: "Tesla",
       score: 72,
       status: "Oota",
-      signal: "⚪"
+      risk: "Kõrge",
+      color: "gray"
     }
   ];
 
@@ -44,24 +48,29 @@ export default function AlphaRadar() {
 
 
 
-      <div className="radar-list">
+      <div className="radar-assets">
 
 
         {assets.map((asset) => (
 
-          <div className="radar-item" key={asset.name}>
+          <div 
+            className="radar-card"
+            key={asset.name}
+          >
 
 
-            <div className="asset-top">
+            <div className="radar-header">
+
 
               <strong>
-                {asset.signal} {asset.name}
+                {asset.name}
               </strong>
 
 
-              <span>
-                {asset.score}/100
+              <span className={`score ${asset.color}`}>
+                {asset.score}
               </span>
+
 
             </div>
 
@@ -70,7 +79,7 @@ export default function AlphaRadar() {
             <div className="radar-bar">
 
               <div
-                className="radar-fill"
+                className={`radar-progress ${asset.color}`}
                 style={{
                   width: `${asset.score}%`
                 }}
@@ -80,12 +89,21 @@ export default function AlphaRadar() {
 
 
 
-            <p>
-              {asset.status}
-            </p>
+            <div className="radar-info">
+
+              <span>
+                {asset.status}
+              </span>
+
+              <span>
+                Risk: {asset.risk}
+              </span>
+
+            </div>
 
 
           </div>
+
 
         ))}
 
@@ -96,4 +114,5 @@ export default function AlphaRadar() {
     </section>
 
   );
+
 }
