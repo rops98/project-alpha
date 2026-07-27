@@ -1,150 +1,288 @@
 export default function Home() {
-  const assets = [
-    { name: "Bitcoin", score: 85, action: "WATCH" },
-    { name: "NVIDIA", score: 91, action: "WATCH" },
-    { name: "S&P 500 ETF", score: 78, action: "HOLD" },
-    { name: "Ethereum", score: 82, action: "WATCH" },
+  const investments = [
+    {
+      name: "NVIDIA",
+      score: 91,
+      status: "Hea jälgida"
+    },
+    {
+      name: "Bitcoin",
+      score: 85,
+      status: "Oota võimalust"
+    },
+    {
+      name: "Microsoft",
+      score: 88,
+      status: "Stabiilne"
+    }
   ];
 
   return (
-    <main style={{
-      minHeight: "100vh",
-      background: "#0b0f19",
-      color: "white",
-      padding: "30px",
-      fontFamily: "Arial"
-    }}>
+    <main className="page">
 
-      <h1 style={{fontSize:"36px"}}>
-        🧠 Project Alpha
-      </h1>
-
-      <p style={{color:"#9ca3af"}}>
-        AI Investment Assistant
-      </p>
+      <header>
+        <h1>🧠 Project Alpha</h1>
+        <p className="subtitle">
+          Tere, Robert 👋
+        </p>
+        <p className="gray">
+          Sinu isiklik AI investeerimisassistent
+        </p>
+      </header>
 
 
-      <div style={{
-        display:"grid",
-        gridTemplateColumns:"repeat(auto-fit,minmax(250px,1fr))",
-        gap:"20px",
-        marginTop:"30px"
-      }}>
+      <section className="mainCard">
 
-        <Card title="Portfolio">
-          €100.00
-          <small>Starting balance</small>
-        </Card>
-
-        <Card title="Today">
-          +0.00%
-          <small>No positions yet</small>
-        </Card>
-
-        <Card title="Risk">
-          Medium
-          <small>20% loss tolerance</small>
-        </Card>
-
-      </div>
-
-
-      <section style={{
-        marginTop:"30px",
-        background:"#111827",
-        padding:"25px",
-        borderRadius:"20px"
-      }}>
+        <p className="label">
+          Portfelli väärtus
+        </p>
 
         <h2>
-          🤖 AI Market Status
+          100,00 €
         </h2>
 
-        <h3 style={{color:"#facc15"}}>
-          🟡 WAIT
-        </h3>
-
-        <p style={{color:"#cbd5e1"}}>
-          System is monitoring opportunities.
-          No strong entry signal detected yet.
+        <p className="green">
+          +0,00% täna
         </p>
 
       </section>
 
 
 
-      <section style={{marginTop:"30px"}}>
+      <section className="card">
 
-        <h2>
-          ⭐ Watchlist
-        </h2>
+        <h3>
+          🤖 Tänane AI hinnang
+        </h3>
 
-        {assets.map((asset)=>(
-          <div key={asset.name}
-          style={{
-            background:"#111827",
-            marginTop:"12px",
-            padding:"18px",
-            borderRadius:"15px",
-            display:"flex",
-            justifyContent:"space-between"
-          }}>
+        <div className="status">
+          🟡 OOTA
+        </div>
+
+        <p>
+          Hetkel ei näe tugevat ostukohta.
+          Jälgin turgu ja ootan paremat võimalust.
+        </p>
+
+      </section>
+
+
+
+      <section className="grid">
+
+        <div className="card">
+          <p className="label">
+            Vaba raha
+          </p>
+          <h3>
+            100,00 €
+          </h3>
+        </div>
+
+
+        <div className="card">
+          <p className="label">
+            Investeeritud
+          </p>
+          <h3>
+            0,00 €
+          </h3>
+        </div>
+
+
+        <div className="card">
+          <p className="label">
+            Kasum/kahjum
+          </p>
+          <h3>
+            0,00 €
+          </h3>
+        </div>
+
+      </section>
+
+
+
+      <section className="card">
+
+        <h3>
+          🔎 Jälgimisel
+        </h3>
+
+
+        {investments.map((item) => (
+
+          <div className="investment" key={item.name}>
 
             <div>
-              <b>{asset.name}</b>
-              <br/>
-              AI Score: {asset.score}/100
+              <strong>
+                {item.name}
+              </strong>
+
+              <p>
+                {item.status}
+              </p>
             </div>
 
-            <strong>
-              {asset.action}
-            </strong>
+
+            <div className="score">
+              {item.score}/100
+            </div>
 
           </div>
+
         ))}
 
       </section>
 
 
 
-      <section style={{
-        marginTop:"30px",
-        background:"#111827",
-        padding:"25px",
-        borderRadius:"20px"
-      }}>
+      <section className="card">
 
-        <h2>
-          🚨 Alerts
-        </h2>
+        <h3>
+          🚨 Teavitused
+        </h3>
 
         <p>
-          No active alerts.
+          Hetkel aktiivseid hoiatusi ei ole.
         </p>
 
       </section>
 
 
+      <style jsx>{`
+
+        .page {
+          min-height:100vh;
+          background:#f7f8fa;
+          color:#111827;
+          padding:30px;
+          max-width:900px;
+          margin:auto;
+          font-family:Arial, sans-serif;
+        }
+
+
+        h1 {
+          font-size:36px;
+          margin-bottom:10px;
+        }
+
+
+        h2 {
+          font-size:48px;
+          margin:10px 0;
+        }
+
+
+        h3 {
+          margin-top:0;
+        }
+
+
+        .subtitle {
+          font-size:22px;
+          margin-bottom:5px;
+        }
+
+
+        .gray {
+          color:#6b7280;
+        }
+
+
+        .label {
+          color:#6b7280;
+          margin-bottom:5px;
+        }
+
+
+        .mainCard,
+        .card {
+
+          background:white;
+          border-radius:24px;
+          padding:25px;
+          margin-top:20px;
+          box-shadow:0 8px 25px rgba(0,0,0,0.05);
+
+        }
+
+
+        .green {
+          color:#16a34a;
+          font-weight:bold;
+        }
+
+
+        .status {
+
+          display:inline-block;
+          background:#fef3c7;
+          padding:10px 18px;
+          border-radius:30px;
+          margin:10px 0;
+          font-weight:bold;
+
+        }
+
+
+        .grid {
+
+          display:grid;
+          grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+          gap:20px;
+
+        }
+
+
+        .investment {
+
+          display:flex;
+          justify-content:space-between;
+          align-items:center;
+          border-top:1px solid #eee;
+          padding:15px 0;
+
+        }
+
+
+        .investment p {
+
+          margin:5px 0 0;
+          color:#6b7280;
+
+        }
+
+
+        .score {
+
+          font-size:20px;
+          font-weight:bold;
+
+        }
+
+
+        @media(max-width:600px){
+
+          .page {
+            padding:20px;
+          }
+
+
+          h1 {
+            font-size:30px;
+          }
+
+
+          h2 {
+            font-size:40px;
+          }
+
+        }
+
+      `}</style>
+
     </main>
-  );
-}
-
-
-function Card({title, children}) {
-  return (
-    <div style={{
-      background:"#111827",
-      padding:"25px",
-      borderRadius:"20px"
-    }}>
-      <p style={{color:"#94a3b8"}}>
-        {title}
-      </p>
-
-      <h2>
-        {children}
-      </h2>
-
-    </div>
   );
 }
